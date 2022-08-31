@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+/* font-family: 'DM Sans', sans-serif; */
+/* - Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)
+- Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:  hsl(33, 100%, 98%);
+    font-family:  'DM Sans', sans-serif;
+}
+.balance {
+    background: hsl(10, 79%, 65%);
+    color: #fff;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    border-radius: 0.7rem;
+}
+.thick {
+    font-weight: 500;
+}
+.bar { 
+    background: hsl(10, 79%, 65%);
+    border-radius: 0.2rem;
+    cursor: pointer;
+    display: inline-block !important;
+}
+.main-bar {
+    display: inline-block !important;
+    margin: 0 0 0 15px;
+    padding-top: 4rem;
+}
+.mon {
+    height: 80px;
+    width: 40px;
+}
+.tue {
+    height: 130px;
+    width: 40px;
+}
+.wed {
+    height: 200px;
+    width: 40px;
+}
+.thur {
+    height: 100px;
+    width: 40px;
+}
+.fri {
+    height: 90px;
+    width: 40px;
+}
+.sat {
+    height: 170px;
+    width: 40px;
+}
+.sun {
+    height: 120px;
+    width: 40px;
+}
+.tool-tip {
+    color: #fff;
+    background: #000;
+    width: fit-content;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.5rem;
+    margin: 0 0 5px 0;
+    display: none;
+    transition: 0.5s ease-in-out !important;
+    position: absolute;
+}
+.dropdown-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s ease-in-out !important;
+}
+.dropdown-bar:hover .tool-tip {
+    display: inline-block;
+    transform: translate(0, -120%);
+    transition: 0.5s ease-in-out !important;
+}
+.heading h3 {
+    font-size: 20px;
+}
+.bar-txt{
+    color: hsl(186, 34%, 60%);
+}
+.line {
+    height: 2px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    background-color: hsl(27, 66%, 92%);
+}
+.balance-brought {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right {
+    text-align: right !important;
+    margin-top: 8px;
+}
+.main {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 1.5rem 0;
+    border-radius: 1rem;
+}

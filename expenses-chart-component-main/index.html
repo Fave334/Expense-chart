@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="DM_Sans/DMSans-Bold.ttf">
+  <link rel="stylesheet" href="DM_Sans/DMSans-BoldItalic.ttf">
+  <link rel="stylesheet" href="DM_Sans/DMSans-Italic.ttf">
+  <link rel="stylesheet" href="DM_Sans/DMSans-Medium.ttf">
+  <link rel="stylesheet" href="DM_Sans/DMSans-MediumItalic.ttf">
+  <link rel="stylesheet" href="DM_Sans/DMSans-Regular.ttf">
+  <script>
+    window.addEventListener("load", () => {
+      // hsl(186, 34%, 60%)
+      let day = new Date().getDay();
+      let b1, b2, b3, b4, b5, b6, b7;
+      b1 = document.getElementById('bar1');
+      b2 = document.getElementById('bar2');
+      b3 = document.getElementById('bar3');
+      b4 = document.getElementById('bar4');
+      b5 = document.getElementById('bar5');
+      b6 = document.getElementById('bar6');
+      b7 = document.getElementById('bar7');
+      switch (new Date().getDay()) {
+        case 0:
+          b7.style.backgroundColor = "hsl(186, 34%, 60%)";
+          break;
+        case 1:
+          b1.style.backgroundColor = "hsl(186, 34%, 60%)";
+          break;
+        case 2:
+          b2.style.backgroundColor = "hsl(186, 34%, 60%)";
+          break;
+        case 3:
+          b3.style.backgroundColor = "hsl(186, 34%, 60%)";
+          alert("Wednesday")
+          break;
+        case 4:
+          b4.style.backgroundColor = "hsl(186, 34%, 60%)";
+          break;
+        case 5:
+          b5.style.backgroundColor = "hsl(186, 34%, 60%)";
+          break;
+        case 6:
+          b6.style.backgroundColor = "hsl(186, 34%, 60%)";
+          break;
+        default:
+          alert("Date Error");
+          break;
+      }
+
+    });
+  </script>
+</head>
+
+<body>
+  <!-- My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month -->
+  <div class="barchat">
+    <div class="balance">
+      <div class="balancetxt">
+        <p>My Balance</p>
+        <h2 class="thick">$921.48</h2>
+      </div>
+      <div class="balcancelogo">
+        <img src="images/logo.svg" alt="">
+      </div>
+    </div>
+    <div class="main">
+      <div class="heading">
+        <h3>Spending - Last 7 Days</h3>
+      </div>
+      <!--Bars-->
+      <div class="bars">
+        <div class="main-bar">
+          <div class="dropdown-bar">
+            <div class="tool-tip bar-amnt">
+              <p>$17.45</p>
+            </div>
+            <div class="drop-btn bar mon" id="bar1"></div>
+            <p class="bar-txt">mon</p>
+          </div>
+        </div>
+        <!--Bars-->
+        <div class="main-bar">
+          <div class="dropdown-bar">
+            <div class="tool-tip bar-amnt">
+              <p>$34.91</p>
+            </div>
+            <div class="drop-btn bar tue" id="bar2"></div>
+            <p class="bar-txt">tue</p>
+          </div>
+        </div>
+        <!--Bars-->
+        <div class="main-bar">
+          <div class="dropdown-bar">
+            <div class="tool-tip bar-amnt">
+              <p>$52.36</p>
+            </div>
+            <div class="drop-btn bar wed" id="bar3"></div>
+            <p class="bar-txt">wed</p>
+          </div>
+        </div>
+        <!--Bars-->
+        <div class="main-bar">
+          <div class="dropdown-bar">
+            <div class="tool-tip bar-amnt">
+              <p>$31.07</p>
+            </div>
+            <div class="drop-btn bar thur" id="bar4"></div>
+            <p class="bar-txt">thu</p>
+          </div>
+        </div>
+        <!--Bars-->
+        <div class="main-bar">
+          <div class="dropdown-bar">
+            <div class="tool-tip bar-amnt">
+              <p>$23.39</p>
+            </div>
+            <div class="drop-btn bar fri" id="bar5"></div>
+            <p class="bar-txt">fri</p>
+          </div>
+        </div>
+        <!--Bars-->
+        <div class="main-bar">
+          <div class="dropdown-bar">
+            <div class="tool-tip bar-amnt">
+              <p>$43.28</p>
+            </div>
+            <div class="drop-btn bar sat" id="bar6"></div>
+            <p class="bar-txt">sat</p>
+          </div>
+        </div>
+        <!--Bars-->
+        <div class="main-bar">
+          <div class="dropdown-bar">
+            <div class="tool-tip bar-amnt">
+              <p>$25.48</p>
+            </div>
+            <div class="drop-btn bar sun" id="bar7"></div>
+            <p class="bar-txt">sun</p>
+          </div>
+        </div>
+      </div>
+      <!--End Region-->
+      <div class="line"></div>
+      <div class="balance-brought">
+        <div class="left">
+          <p class="bar-txt">Total this month</p>
+          <h1>$478.33</h1>
+        </div>
+        <div class="right">
+          <h4>+2.4%</h4>
+          <p class="bar-txt">from last month</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
