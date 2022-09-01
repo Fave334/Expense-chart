@@ -28,7 +28,7 @@ body {
     border-radius: 0.7rem;
 }
 .thick {
-    font-weight: 500;
+    font-weight: 600;
 }
 .bar { 
     background: hsl(10, 79%, 65%);
@@ -121,5 +121,36 @@ body {
 @media screen and (max-width : 500px){
     .bar {
         width: 25px;
+    }
+    .mon {
+        height: 40px;
+    }
+    .tue {
+        height: 90px;
+    }
+    .wed {
+        height: 160px;
+    }
+    .thur {
+        height: 60px;
+    }
+    .fri {
+        height: 50px;
+    }
+    .sat {
+        height: 130px;
+    }
+    .sun {
+        height: 80px;
+    }
+    .main-bar {
+        margin: 0 0 0 10px;
+    }
+    .tool-tip {
+        padding: 0.3rem 0.4rem;
+        font-size: 12px;
+    }
+    .balance {
+        padding: 1rem;
     }
 }
